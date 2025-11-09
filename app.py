@@ -80,7 +80,7 @@ start_button = st.button('Ejecutar')
 if start_button:
     st.write(f'Experimento con {number_of_trials} intentos en curso.')
     mean = toss_coin(number_of_trials)
-  import pandas as pd
+import pandas as pd
 import scipy.stats
 import streamlit as st
 import time
@@ -173,3 +173,4 @@ if start_button:
     st.session_state['df_experiment_results'] = st.session_state['df_experiment_results'].reset_index(drop=True)
 
 st.write(st.session_state['df_experiment_results'])
+
